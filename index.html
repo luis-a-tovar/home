@@ -10,8 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- Fontawesome Link for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="icon" href="images\websiteLogo.jpg">
-
+        <link rel="icon" href="images/websiteLogo.jpg">
     </head>
     <body>
         
@@ -43,44 +42,51 @@
                 </ul>
             </div>
         </nav>
+
         <!-- Home Section -->
-    <section id="home">
+        <section id="home">
             <div class="main">
                 <div class="main__container">
                     <div class="main__img--container fade delay-0">
-                        <img src="images/Luis Tovar (Gray BGD).jpg" alt="Luis" id="main__img"> <!-- Image container moved -->
+                        <img src="images/Luis Tovar (Gray BGD).jpg" alt="Luis" id="main__img">
                     </div>
                     <div class="main__content fade delay-2">
                         <h1> > Hi, I'm Luis</h1>
                         <h2>
-                            
-                            <span class ="auto-type"></span>
+                            <span class="auto-type"></span>
                             <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                         </h2>
 
                         <script>
-                            var typed = new Typed(".auto-type",{
-                                strings : ["Mechanical Engineering at Virginia Tech^500","I am First Generation.", "I am a Leader.","I am a Musician.", " I am an Engineer.^1000"],
-                                typeSpeed : 100,
-                                backSpeed : 100,
-                                smartBackspace : true,
-                                loop : true
-                                
-                            }) 
+                            var typed = new Typed(".auto-type", {
+                                strings: [
+                                    "Mechanical Engineering at Virginia Tech^500",
+                                    "I am First Generation.",
+                                    "I am a Leader.",
+                                    "I am a Musician.",
+                                    " I am an Engineer.^1000"
+                                ],
+                                typeSpeed: 100,
+                                backSpeed: 100,
+                                smartBackspace: true,
+                                loop: true
+                            });
                         </script>
 
-                        <div class="main__btn"><a href="Resume/Luis_Tovar_Resume_Application.pdf" download="Luis_Tovar_Resume">Download Resume</a></div>
+                        <div class="main__btn">
+                            <a href="Resume/Luis_Tovar_Resume_Application.pdf" download="Luis_Tovar_Resume">Download Resume</a>
+                        </div>
                     </div>
                     <div class="main__icon--container fade delay-0">
                         <ul>
                             <li class="main__icon">
                                 <a href="https://www.linkedin.com/in/luistovar03/">
-                                    <img src="images\linkedin-app-white-icon.webp" alt="LinkedIn">
+                                    <img src="images/linkedin-app-white-icon.webp" alt="LinkedIn">
                                 </a>
                             </li>
                             <li class="main__icon">
                                 <a href="mailto:latovar03@vt.edu">
-                                    <img src="images\360_F_512301276_qSZQslgWvKXE0boacEq10ClDTPihAWDj.jpg" alt="Email">
+                                    <img src="images/360_F_512301276_qSZQslgWvKXE0boacEq10ClDTPihAWDj.jpg" alt="Email">
                                 </a>
                             </li>
                             <li class="main__icon">
@@ -93,54 +99,7 @@
                 </div>
             </div>
         </section>
-        <!-- Extracurricular -->
-
-        <section id = "extracurricular" class="extracurricular__section ">
-            <h2>Extracurricular</h2>
-            
-            <div class="wrapper fade delay-4">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel">
-                  <li class="card">
-                    <div class="img"><img src="images/NSBEFLICK.jpg" alt="img" draggable="false"></div>
-                    <h2>NSBE</h2>
-                    <h3>National Society of Black Engineers</h3>
-                    <p>Undergraduate Council Leader</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/colorstacklogo.png" alt="img" draggable="false"></div>
-                    <h2>ColorStackVT</h2>
-                    <p>Financial Officer for ColorStackVT</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/BMEN.webp" alt="img" draggable="false"></div>
-                    <h2>BMEN</h2>
-                    <p>Black Male Excellence Network</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/VTLOGO.png" alt="img" draggable="false"></div>
-                    <h2>UTA</h2>
-                    <p>CS Undergraduate Teacher Assistant</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/football.jpg" alt="img" draggable="false"></div>
-                    <h2>Athlete</h2>
-                    <p>Intramural  Football</p>
-                  </li>
-                  <!-- <li class="card">
-                    <div class="img"><img src="images/Title.png" alt="img" draggable="false"></div>
-                    <h2>Donald Horton</h2>
-                    <span>App Designer</span>
-                  </li> -->
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-              </div>
-        </section>
-
-
-
 
         <script src="app.js"></script>
-
     </body>
 </html>
