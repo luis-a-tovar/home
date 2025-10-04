@@ -29,16 +29,16 @@
                         <a href="https://luis-a-tovar.github.io/home/" class="navbar__links button">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#about" class="navbar__links button">About Me</a>
+                        <a href="#about" class="navbar__links button">About</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#skills" class="navbar__links button">Engineering</a>
+                        <a href="#skills" class="navbar__links button">Skills</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#projects" class="navbar__links button">Extracurriculars</a>
+                        <a href="#projects" class="navbar__links button">Projects</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#extracurricular" class="navbar__links button">Music</a>
+                        <a href="#extracurricular" class="navbar__links button">Extracurricular</a>
                     </li>
                 </ul>
             </div>
@@ -93,7 +93,78 @@
                 </div>
             </div>
         </section>
-    
+        <!-- About Me Section -->
+        <section id="about" class="about-me">
+            <header class="about-me__header fade delay-1">
+                <h2>About Me</h2>
+            </header>
+            <div class="about-me__container fade delay-1">
+                <div class="about-me__content">
+                    <div class="about-me__description">
+                        <p>As a Computer Science student at Virginia Tech, I'm passionate about expanding my knowledge of software engineering, cyber-security, and data science, which is supported by a strong foundation in Python, Java, and networking. Outside of the classroom, I am an avid fan of the NFL, NBA, and Premier League Soccer, particularly the Cowboys, Spurs, and Manchester City. My athletic ambitions have recently resulted in a new power clean PR of 295 lbs. Beyond technology and athletics, I'm a huge car enthusiast.</p>
+                        <p2>--Romans 8:18--</p2>
+                        <!-- Add more paragraphs as needed -->
+                    </div>
+                    
+                    <div class="about-me__slider">
+                            <img class="slide" src="images/promFlick.jpg" alt="img not showing">
+                            <img class="slide" src="images/topOfMontain.jpg" alt="img not showing">
+                            <img class="slide" src="images/workingOnCars.jpg" alt="img not showing">
+                            <img class="slide" src="images/igFlick.jpg" alt="img not showing">
+                            <button class="prev" onclick="prevSlide()">&#10094</button>
+                            <button class="next" onclick="nextSlide()">&#10095</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Extracurricular -->
+
+        <section id = "extracurricular" class="extracurricular__section ">
+            <h2>Extracurricular</h2>
+            
+            <div class="wrapper fade delay-4">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                  <li class="card">
+                    <div class="img"><img src="images/NSBEFLICK.jpg" alt="img" draggable="false"></div>
+                    <h2>NSBE</h2>
+                    <h3>National Society of Black Engineers</h3>
+                    <p>Undergraduate Council Leader</p>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/colorstacklogo.png" alt="img" draggable="false"></div>
+                    <h2>ColorStackVT</h2>
+                    <p>Financial Officer for ColorStackVT</p>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/BMEN.webp" alt="img" draggable="false"></div>
+                    <h2>BMEN</h2>
+                    <p>Black Male Excellence Network</p>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/VTLOGO.png" alt="img" draggable="false"></div>
+                    <h2>UTA</h2>
+                    <p>CS Undergraduate Teacher Assistant</p>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/football.jpg" alt="img" draggable="false"></div>
+                    <h2>Athlete</h2>
+                    <p>Intramural  Football</p>
+                  </li>
+                  <!-- <li class="card">
+                    <div class="img"><img src="images/Title.png" alt="img" draggable="false"></div>
+                    <h2>Donald Horton</h2>
+                    <span>App Designer</span>
+                  </li> -->
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+        </section>
+
+
         <script src="app.js"></script>
 
     </body>
