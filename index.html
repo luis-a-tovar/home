@@ -1,152 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Luis Tovar</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- Fontawesome Link for Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="icon" href="images\LTLogo.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Tovar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" href="images/LTLogo.jpg" />
+  </head>
 
-    </head>
-    <body>
-        
-        <!-- navbar class -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <!-- nav bar buttons-->
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/" class="navbar__links button">About Me</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/stem" class="navbar__links button">STEM</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/music" class="navbar__links button">Music</a>
-                    </li>
-                </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io/" class="navbar__links button"
+              >About Me</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io/stem" class="navbar__links button"
+              >STEM</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io/music" class="navbar__links button"
+              >Music</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Projects -->
+    <section id="projects" class="projects__section">
+      <h2>Projects</h2>
+      <div class="projects__container fade delay-3">
+        <!-- High-Altitude Balloon Payload (updated) -->
+        <div class="projects__box">
+          <img class="image1" src="images/balloon.jpg" alt="High-Altitude Balloon Payload" />
+          <h3>High-Altitude Balloon Payload</h3>
+          <p>
+            Senior capstone project focused on developing a reaction wheel–stabilized payload to capture in-flight camera footage from near-space altitudes. Contributed to controls development and payload housing design using SolidWorks and MATLAB. Currently transitioning from preliminary design to early prototyping, with plans for a launch and data analysis following the flight test.
+          </p>
+        </div>
+
+        <div class="projects__box">
+          <img class="image1" src="images/pedalpower.jpg" alt="Pedal Power Project" />
+          <h3>Pedal Power</h3>
+          <p>
+            Designed a pedal-powered charging system converting mechanical energy from bicycle motion into electrical energy using a dynamo. Modeled and validated the system in Siemens NX.
+          </p>
+        </div>
+
+        <div class="projects__box">
+          <img class="image1" src="images/lightsaber.jpg" alt="Custom Lightsaber" />
+          <h3>Custom Made Lightsaber</h3>
+          <p>
+            Created CAD models in Onshape and SolidWorks for a custom lightsaber hilt, 3D printed and assembled with electronics and a programmable soundboard for synchronized effects.
+          </p>
+        </div>
+
+        <div class="projects__box">
+          <img class="image1" src="images/theremin.jpg" alt="Modified Theremin" />
+          <h3>Modified Theremin</h3>
+          <p>
+            Developed an Arduino-based theremin prototype with a distance sensor to modulate pitch in real time using Pure Data and AM/FM synthesis techniques.
+          </p>
+        </div>
+
+        <div class="projects__box">
+          <img class="image1" src="images/faucet.jpg" alt="Motion-Activated Faucet Adapter" />
+          <h3>Low-Cost Motion-Activated Faucet Adapter</h3>
+          <p>
+            Engineered an Arduino-powered module to retrofit faucets with motion activation and timed shutoff, integrating 3D printed components designed in SolidWorks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and Experiences -->
+    <section id="extracurricular" class="extracurricular__section">
+      <h2>Education and Experiences</h2>
+
+      <div class="wrapper fade delay-4">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img">
+              <img src="images/VTLOGO.png" alt="Virginia Tech" draggable="false" />
             </div>
-        </nav>
-  
-     
-        <!-- Projects -->
-        <section id = "projects" class="projects__section">
-            <h2>Projects</h2>
-            
-            <div class="projects__container fade delay-3">
-                <div class="projects__box">
-                    <a href="https://github.com/n-Turn/TheTowerOfHanoi">
-                        <img class="image1" src="images/towerofhanoi.png" alt="Under construction!">
-                        <h3>The Tower of Hanoi</h3>
-                        <p>A Full stack recursive algorithm to seamlessly solve the infamous Tower of Hanoi puzzle. Designed and implemented an interactive, user-friendly GUI. Engineered a custom stack linear data structure in Java to efficiently manage puzzle movements.</p>
-                    </a>
-                </div>
-                <div class="projects__box">
-                    <a href="https://github.com/n-Turn/Tetris-AI">
-                        <img class="image1" src="images/tetris.webp" alt="Under construction!">
-                        <h3>Tetris AI</h3>
-                        <p>Developed an artificial intelligence/machine learning application to autonomously play Tetris in Java. Implemented core features such as recognizing patterns of object components, calculating object orientations, and executing real-time optimizations.</p>
-                    </a>
-                </div>
-                <div class="projects__box">
-                    <a href="https://youtu.be/Dvs2heXM4Ms">
-                        <img class="image1" src="images/walmartGlobalTech.jpg" alt="Under construction!">
-                        <h3>Vlog</h3>
-                        <p>Explore the Walmart Diversity and Leadership Summit in Arkansas through this engaging vlog. It features experiences from the event, highlights of insightful discussions, and introductions to inspiring leaders. Get a behind-the-scenes look at the summit, capturing key moments and major takeaways.</p>
-                    </a>
-                </div>
-                <div class="projects__box">
-                    <a href="https://soundcloud.com/jade-groener-7243/films-you-didnt-know-were-adaptations?si=f296e7cfeb62405e93e8a3b11ed016a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
-                        <img class="image1" src="images/podcast.jpg" alt="Under construction!">
-                        <h3>Films You Didn't Know Were Adaptations Podcast</h3>
-                        <p>Want a relaxing, educational, gripping podcast to listen to? We cover several movie and TV show adaptations, both old and new, and analyze their connections to classical literature. If you have read Shakespeare, Hawthorne, Austen, Shelley, or Greek myths, click here to hear about their modern adaptations and how loyal they are to the stories! Warning: spoilers ahead!</p>
-                    </a>
-                </div>
-                <div class="projects__box">
-                    <a href="https://medium.com/@nicturn/nicolas-turner-blog-post-0eb70f8948bc">
-                        <img class="image1" src="images/superbowlwatching.webp" alt="Under construction!">
-                        <h3>BlogPost</h3>
-                        <p>A beginner friendly overview of American football, explaining the game's structure, scoring, and key statistics. The blog simplifies how to interpret the game flow and scoreboard, and offers tips on enhancing viewing experience by focusing on key player roles and engaging with live commentary and online forums.</p>
-                    </a>
-                </div>
+            <h2>Virginia Tech</h2>
+            <p>B.S. Mechanical Engineering (Aug 2022 – May 2026)</p>
+            <p>
+              <strong>Relevant Coursework:</strong> Thermodynamics, Fluid Mechanics, Controls, Heat Transfer, Robotics, Engineering Acoustics
+            </p>
+          </li>
+
+          <li class="card">
+            <div class="img">
+              <img src="images/cfrengineering.png" alt="CFR Engineering Consultants" draggable="false" />
             </div>
-        </section>
+            <h2>CFR Engineering Consultants</h2>
+            <p>Mechanical Engineering Intern (June 2024 – Present)</p>
+            <p>
+              Supported HVAC, fire protection, and plumbing design for clients such as NIH, NIST, and Northrop Grumman. Conducted load calculations, created Revit and AutoCAD models, and participated in site inspections.
+            </p>
+          </li>
 
-        <!-- Extracurricular -->
-
-        <section id = "extracurricular" class="extracurricular__section ">
-            <h2>Extracurricular</h2>
-            
-            <div class="wrapper fade delay-4">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel">
-                  <li class="card">
-                    <div class="img"><img src="images/NSBEFLICK.jpg" alt="img" draggable="false"></div>
-                    <h2>NSBE</h2>
-                    <h3>National Society of Black Engineers</h3>
-                    <p>Undergraduate Council Leader</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/colorstacklogo.png" alt="img" draggable="false"></div>
-                    <h2>ColorStackVT</h2>
-                    <p>Financial Officer for ColorStackVT</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/BMEN.webp" alt="img" draggable="false"></div>
-                    <h2>BMEN</h2>
-                    <p>Black Male Excellence Network</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/VTLOGO.png" alt="img" draggable="false"></div>
-                    <h2>UTA</h2>
-                    <p>CS Undergraduate Teacher Assistant</p>
-                  </li>
-                  <li class="card">
-                    <div class="img"><img src="images/football.jpg" alt="img" draggable="false"></div>
-                    <h2>Athlete</h2>
-                    <p>Intramural  Football</p>
-                  </li>
-                  <!-- <li class="card">
-                    <div class="img"><img src="images/Title.png" alt="img" draggable="false"></div>
-                    <h2>Donald Horton</h2>
-                    <span>App Designer</span>
-                  </li> -->
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-              </div>
-        </section>
-           <!-- Skills Section -->
-        <section id ="skills" class="skills-section">
-            <h2>My Skills</h2>
-            <div class="skills-box fade delay-2">
-                <ul class="skills-list">
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML/CSS/JavaScript</li>
-                    <li>C</li>
-                    <li>R</li>
-                    <li>Linux/Unix</li>
-                    <li>Packet Tracer</li>
-                    <li>Raspberry Pi</li>
-                    <li>Wireshark</li>
-                    <!-- More skills here -->
-                </ul>
+          <li class="card">
+            <div class="img">
+              <img src="images/AmeriCorpsLogo.png" alt="AmeriCorps" draggable="false" />
             </div>
-        </section>
-        
+            <h2>Dan River Year AmeriCorps</h2>
+            <p>Summer STEM Educator (June 2023 – Aug 2023)</p>
+            <p>
+              Taught coding, 3D modeling, and prototype design to 60+ students; 80% showed measurable SEL growth based on Aperture assessments.
+            </p>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-box fade delay-2">
+        <ul class="skills-list">
+          <li>NX</li>
+          <li>SolidWorks</li>
+          <li>ANSYS</li>
+          <li>Onshape</li>
+          <li>AutoCAD</li>
+          <li>Revit</li>
+          <li>Python</li>
+          <li>MATLAB</li>
+          <li>Simulink</li>
+          <li>C++</li>
+          <li>3D Printing</li>
+          <li>Laser Cutting</li>
+          <li>CNC Machining</li>
+          <li>Soldering</li>
+          <li>Circuiting</li>
+          <li>English / Spanish (Native)</li>
+          <li>French (Conversational)</li>
+        </ul>
+      </div>
+    </section>
 
-        <script src="app.js"></script>
-
-    </body>
+    <script src="app.js"></script>
+  </body>
 </html>
