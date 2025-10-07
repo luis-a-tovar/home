@@ -955,3 +955,9 @@ footer {
   display: block;
   margin-bottom: 40px;
 }
+
+/* Center the Languages skills box */
+#skills .skills__content:last-child {
+  margin-left: auto;
+  margin-right: auto;
+}
