@@ -216,15 +216,6 @@ html {
   text-align: center;
 }
 
-#projects .section__subtitle,
-.projects__section .section__subtitle {
-  display: block;
-  color: #cf4420;
-  text-align: center;
-  margin-bottom: 24px;
-  font-weight: 500;
-}
-
 .projects__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -285,16 +276,26 @@ html {
   color: #fff;
 }
 
+.education-experience-section h2 {
+  color: #fff;
+  font-size: 2.25rem;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .edu-exp-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .edu-exp-card {
-  background-color: #242424 !important;
-  color: #fff !important;
+  background-color: #242424;
+  color: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   padding: 2rem;
@@ -302,6 +303,9 @@ html {
   width: 100%;
   text-align: left;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .edu-exp-card:hover {
@@ -342,37 +346,71 @@ html {
   font-size: 0.9rem;
 }
 
-/* Timeline for Experience */
+/* ---------- TIMELINE STYLES ---------- */
 .timeline {
   position: relative;
-  margin-left: 1.5rem;
-  padding-left: 1.5rem;
-  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90%;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .exp-item {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .exp-dot {
-  position: absolute;
-  left: -1.65rem;
-  top: 0.4rem;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   background-color: #cf4420;
   border-radius: 50%;
   border: 2px solid #fff;
-  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
+/* Left side — logos and dates */
+.exp-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 0.3rem;
+}
+
+.exp-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.exp-left .date {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Right side — company name and position */
 .exp-content {
-  flex: 1;
-  margin-left: 0.5rem;
+  width: 45%;
+  text-align: left;
 }
 
 .exp-content strong {
@@ -383,19 +421,44 @@ html {
 
 .exp-content p {
   color: #d6d6d6;
-  margin: 0.25rem 0 0;
+  margin-top: 0.25rem;
   font-size: 0.95rem;
 }
 
+/* ---------- RESPONSIVE LAYOUT ---------- */
 @media (min-width: 768px) {
   .edu-exp-container {
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .edu-exp-card {
-    width: 45%;
+    flex: 1;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+
+  .exp-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-left,
+  .exp-content {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .exp-dot {
+    left: 8px;
+    transform: none;
   }
 }
 
@@ -407,40 +470,4 @@ footer {
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: #313131;
-}
-
-/* Match Education & Experience title to Projects title (balanced size) */
-.education-experience-section h2 {
-  color: #fff;
-  font-size: 2.25rem; /* slightly smaller for balance */
-  margin-bottom: 25px;
-  margin-top: 25px;
-  font-weight: 700;
-  text-align: center;
-}
-
-/* Equalize Education and Experience box heights */
-.edu-exp-container {
-  align-items: stretch; /* ensures both cards align in height */
-}
-
-.edu-exp-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-/* Auto equal height for side-by-side layout */
-@media (min-width: 768px) {
-  .edu-exp-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch; /* ensures equal height alignment */
-  }
-
-  .edu-exp-card {
-    flex: 1;
-    height: auto;
-  }
 }
