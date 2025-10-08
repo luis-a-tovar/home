@@ -414,6 +414,20 @@ footer {
   color: #fff;
   font-size: 2.25rem; /* slightly smaller for balance */
   margin-bottom: 25px;
+
+  /* Equalize Education and Experience box heights */
+.edu-exp-container {
+  align-items: stretch; /* ensures both cards align in height */
+}
+
+.edu-exp-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px; /* adjust this value if needed */
+  height: 100%;
+}
+
   margin-top: 25px;
   font-weight: 700;
   text-align: center;
