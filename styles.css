@@ -1106,3 +1106,112 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.4);
 }
+
+.education-experience-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.edu-exp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.edu-exp-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+}
+
+.edu-exp-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* Education item layout */
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.edu-item strong {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.edu-item p {
+  color: #ccc;
+  margin: 0.25rem 0 0;
+}
+
+.date {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Timeline for Experience */
+.timeline {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.exp-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.exp-dot {
+  position: absolute;
+  left: -1.65rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.exp-content {
+  flex: 1;
+}
+
+.exp-content strong {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.exp-content p {
+  color: #ccc;
+  margin: 0.25rem 0 0;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .edu-exp-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .edu-exp-card {
+    width: 45%;
+  }
+}
