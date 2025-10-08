@@ -408,3 +408,13 @@ footer {
   padding-bottom: 20px;
   background-color: #313131;
 }
+
+/* Match Education & Experience title to Projects title */
+.education-experience-section h2 {
+  color: #fff;
+  font-size: 3rem; /* same as Projects */
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 700;
+  text-align: center;
+}
