@@ -1055,3 +1055,54 @@ footer {
     gap: 18px;
   }
 }
+
+/* Make project boxes match skills section visually */
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.projects__box {
+  background-color: #1e1e1e; /* match skills cards */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.projects__box img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.projects__box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.projects__box p {
+  font-size: 0.95rem;
+  color: #ccc;
+  flex-grow: 1;
+}
+
+/* Hover effect (same as skills) */
+.projects__box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
