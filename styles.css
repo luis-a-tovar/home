@@ -414,8 +414,12 @@ footer {
   color: #fff;
   font-size: 2.25rem; /* slightly smaller for balance */
   margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 700;
+  text-align: center;
+}
 
-  /* Equalize Education and Experience box heights */
+/* Equalize Education and Experience box heights */
 .edu-exp-container {
   align-items: stretch; /* ensures both cards align in height */
 }
@@ -424,11 +428,19 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 400px; /* adjust this value if needed */
   height: 100%;
 }
 
-  margin-top: 25px;
-  font-weight: 700;
-  text-align: center;
+/* Auto equal height for side-by-side layout */
+@media (min-width: 768px) {
+  .edu-exp-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* ensures equal height alignment */
+  }
+
+  .edu-exp-card {
+    flex: 1;
+    height: auto;
+  }
 }
